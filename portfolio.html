@@ -1,11 +1,80 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
+    <!-- Grundlæggende sideinformation og link til eksterne ressourcer-->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Sørger for websiden skalerer korrekt på mobile enheder -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    
+    <!-- Header med navigationslinks -->
+    <header>
+        <!-- Navigationsmenu med links til andre sider på websitet -->
+        <nav>
+            <div class="nav-container-forside">
+                <ul>
+                    <li><a href="index.html">FORSIDE</a></li>
+                    <li><a href="om-mig.html">OM MIG</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="kontakt.html">KONTAKT</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hovedindholdet på siden, det vigtige -->
+    <main>
+        <h1>PORTFOLIO</h1>
+        <div class="gallery">
+            <div class="item">
+                <img src="path_to_image.jpg" alt="Produktbilleder">
+                <h2>Produktbilleder</h2>
+                <p>Produktbilleder fotograferet i forskellige setups og redigeret i Adobe Lightroom.</p>
+            </div>
+            <div class="item">
+                <img src="path_to_image.jpg" alt="Design">
+                <h2>Design</h2>
+                <p>Re-design af logo til Galleri Galshiot i samarbejde med teamet. Designet i Adobe InDesign.</p>
+            </div>
+            <div class="item">
+                <img src="path_to_image.jpg" alt="Portræt">
+                <h2>Portræt</h2>
+                <p>Portræt tegnet i Adobe Illustrator ud fra en ide og et foto.</p>
+            </div>
+            <div class="item">
+                <img src="path_to_image.jpg" alt="Branding">
+                <h2>Branding</h2>
+                <p>Design af visuelt stærkt logo og identitet. Produceret i Adobe Illustrator og Adobe InDesign.</p>
+            </div>
+            <div class="item">
+                <img src="path_to_image.jpg" alt="Video">
+                <h2>Video</h2>
+                <p>Videoer redigeret i Adobe Premiere Pro og visualiseret til en kampagne på UCL.</p>
+            </div>
+            <div class="item">
+                <img src="path_to_image.jpg" alt="Animation">
+                <h2>Animation</h2>
+                <p>Animationer skabt i Adobe Illustrator og derefter animeret i HTML, CSS og JavaScript for bedre engagement.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer indeholder kontaktinformation og links til sociale medier -->
+    <footer>
+        <!-- Kontakinformation -->
+        <address>Fengersvej 37, Odense M</address>
+        <!-- 'href="tel:"' gøres det muligt for brugeren at ringe direkte ved at trykke på nr. -->
+        <a href="tel:+4531335654">+45 31 33 56 54</a>
+        <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
+        
+        <!-- Links til sociale medie-profiler med ikoner -->
+        <div class="socialemedier">
+            <a href="https://www.instagram.com/signe.groenning/"><img src="Instagram.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/signe-grønning/"><img src="Linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/signe.gronning"><img src="Facebook-Logo.png" alt="Facebook"></a>
+        </div>
+    </footer>
 </body>
 </html>
