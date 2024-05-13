@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="da">
-    <head>
-    <!-- Linker til eksternt CSS-stylesheet (grundlæggende styling)-->
-    <link rel="stylesheet" href="stylesheet.css">
+<head>
+    <!-- Grundlæggende sideinformation og link til eksterne ressourcer-->
     <meta charset="UTF-8">
     <!-- Sørger for websiden skalerer korrekt på mobile enheder -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Medie Signe</title>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
-<!-- Websidens start -->
 <body>
     <!-- Header med navigationslinks -->
     <header>
+        <!-- Navigationsmenu med links til andre sider på websitet -->
         <nav>
-            <div class="nav-container">
+            <div class="nav-container-forside">
                 <ul>
-                    <!-- Hver 'li' indeholder link til en anden side/page -->
                     <li><a href="index.html">FORSIDE</a></li>
                     <li><a href="om-mig.html">OM MIG</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
@@ -25,31 +24,33 @@
         </nav>
     </header>
 
-    <!-- Indholdet/hovedindholdet på siden, det vigtige -->
+    <!-- Hovedindholdet på siden, det vigtige -->
     <main>
-       
-        <section class="intro">
-            <h1>Signe Grønning</h1>
-            <p class="first">Multimediedesigner</p>
+        <!-- Introduktion på forsiden -->
+        <section class="intro-forside">
+            <h1 class="navn-forside">Signe Grønning</h1>
+            <p class="first-forside">Multimediedesigner</p>
             <h2>Jeg har erfaring i:</h2>
             <p>Grafisk design, webdesign, designværktøjer, trends & tendenser og meget mere.</p>
             <button class="read-mere-knap">Læs mere</button>
         </section>
 
-        <div class="pink-box">
+        <!-- Billede der supplerer introduktionen -->
+        <div class="pink-box-forside">
             <img src="migforside.png" alt="Billede af Signe" class="billede">
         </div>
-
     </main>
 
-<!-- Footer indeholder kontaktinformation og links til sociale medier -->
+    <!-- Footer indeholder kontaktinformation og links til sociale medier -->
     <footer>
+        <!-- Kontakinformation -->
         <address>Fengersvej 37, Odense M</address>
         <!-- 'href="tel:"' gøres det muligt for brugeren at ringe direkte ved at trykke på nr. -->
         <a href="tel:+4531335654">+45 31 33 56 54</a>
         <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
+        
+        <!-- Links til sociale medie-profiler med ikoner -->
         <div class="socialemedier">
-            <!-- 'div' grupperer elementerne sammen -->
             <a href="https://www.instagram.com/signe.groenning/"><img src="Instagram.png" alt="Instagram"></a>
             <a href="https://www.linkedin.com/in/signe-grønning/"><img src="Linkedin.png" alt="LinkedIn"></a>
             <a href="https://www.facebook.com/signe.gronning"><img src="Facebook-Logo.png" alt="Facebook"></a>

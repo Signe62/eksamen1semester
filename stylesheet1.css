@@ -1,0 +1,109 @@
+/* Grundlæggende layout og typografi for siden */
+html, body{
+height: 100%;
+margin: 0;
+padding: 0;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #252525;
+}
+
+/* Centrering af indhold, side struktur */
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+/* Navigationsbar der bliver i toppen ved scroll og stilen */
+.nav-container-forside {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2rem 0rem;
+    margin-right: 20px;
+    background-color: #d9d9d9;
+    /* Fixed Top: Navigationsbaren forbliver i toppen når bruger scroller */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Fjerner punkttegn fra listen og fjerner browserens default ved margin og padding  */
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Indstilling af links */
+ul li{
+    margin-right: 20px;
+}
+
+/* Grundlæggende stil for linksne i navigationsbaren */
+li a {
+    color: #252525;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 100px;
+}
+
+/* Når musen kører over menuen skifter teksten til lyserød og forbliver lyserød ved aktiv anvendelse */
+li a:hover, li a.active {
+    color: rgb(244, 140, 160);
+}
+
+/* Design og funktion for knappen */
+.read-mere-knap {
+    padding: 10px 20px;
+    background-color: #7d7d7d;
+    color: #252525;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer; /* Når musen kører over knappen kommer der en "hånd" */
+}
+
+/* Når musen kører over knappen skifter teksten til lyserød */
+.read-mere-knap:hover {
+    color: rgb(244, 140, 160);
+}
+
+/* Stil for pink-box */
+.pink-box-forside {
+    width: 700px;
+    height: 740px;
+    display: flex;
+    background-color: rgba(244, 140, 160, 0.30);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1; /* Placerer den pinke boks bag billedet */
+}
+
+/* Stil for billedet af mig der respondere */
+.billede {
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+/* Stil for footer */
+footer {
+    font-size: 14px;
+    display: flex;
+}
+
+/* Fjerner default af address til 'normal' */
+footer address {
+    font-style: normal;
+}
+
+/* Stil for h1 */
+.navn-forside {
+    font-size: 36px;
+    color: rgb(244, 140, 16
