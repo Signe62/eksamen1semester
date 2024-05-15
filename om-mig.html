@@ -1,80 +1,86 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <!-- Grundlæggende sideinformation -->
+    <!-- Grundlæggende sideinformation og link til eksterne ressourcer-->
     <meta charset="UTF-8">
     <!-- Sørger for websiden skalerer korrekt på mobile enheder -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>OM MIG</title>
-    <!-- Link til ekstern CSS-fil for at style siden -->
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+
     <!-- Header med navigationslinks -->
     <header>
+
         <!-- Navigationsmenu med links til andre sider på websitet -->
-        <nav>
-            <div class="nav-container-forside">
+        <nav class="nav-container-forside">
+                <img src="logo-1.png" alt="LOGO" class="logo">
                 <ul>
                     <li><a href="index.html">FORSIDE</a></li>
                     <li><a href="om-mig.html">OM MIG</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="kontakt.html">KONTAKT</a></li>
                 </ul>
-            </div>
         </nav>
     </header>
 
     <!-- Hovedindholdet på siden -->
-    <main>
-        <div class="indhold"> 
-            <section class="intro-om-mig">
-             <div class="tekst-overst-om-mig">
+    <section class="indhold">
+        <div class="intro-om-mig">
+            <div class="tekst-overst-om-mig">
                 <h1 class="overskrift-om-mig">OM MIG</h1>
-                <p class="brødtekst-om-mig">Velkommen til min personlige side. Mit navn er Signe Grønning, jeg er en smilende pige på 22 år og bosiddende i Odense M.</p>
+                <p class="brodtekst-om-mig">Velkommen til min personlige side. Mit navn er Signe Grønning, jeg er en smilende pige på 22 år og bosiddende i Odense M.</p>
                 <p>Min helt store interesse er digital design og online medieplatforme. Derfor læser jeg til multimediedesign på UCL, Odense.</p>
                 <p>På min uddannelse har jeg en stor interesse i at skabe detaljeorienterede og æstetisk tiltalende løsninger både selvstændigt og i kreative teams.</p>
             </div>
             <!-- Billede af mig -->
             <img src="migomside.jpg" alt="Signe Grønning" class="profile-pic">
-        </section>
+        </div>
 
-        <!-- Sektion der fremhæver mine kompetencer -->
-        <section class="kompetencer">
-            <h2>Mine kompetencer</h2>
-            <div class="skills">
-
-                <!-- Enkelt kompetenceområde med billede og beskrivelse -->
-                <div class="skill">
-                    <img src="Ide.jpg" alt="Kreativ idégenerering">
-                    <h3>Kreativitet</h3>
-                    <p>Kreativ idégenerering<br>Hands-on læring.</p>
-                </div>
-
-                <!-- Enkelt kompetenceområde med billede og beskrivelse -->
-                <div class="skill">
-                    <img src="figma-logo.jpg" alt="Figma">
-                    <h3>Figma</h3>
-                    <p>Figma<br>Erfaring i Figma. Bruger det til at visualisere projekter.</p>
-                </div>
+       <!-- Sektion der fremhæver mine kompetencer -->
+       <section class="kompetencer">
+        <h2>Mine kompetencer</h2>
+        <div class="skills">
+            <!-- Enkelt kompetenceområde med billede og beskrivelse -->
+            <div class="skill">
+                <img src="Ide.jpg" alt="Kreativ idégenerering">
+                <h3>Kreativitet</h3>
+                <p>Kreativ idégenerering<br>Hands-on læring.</p>
             </div>
-        </section>
-    </div>
-    </main>
+            <!-- Enkelt kompetenceområde med billede og beskrivelse -->
+            <div class="skill">
+                <img src="figma-logo.jpg" alt="Figma">
+                <h3>Figma</h3>
+                <p>Figma<br>Erfaring i Figma. Bruger det til at visualisere projekter.</p>
+            </div>
+        </div>
+    </section>
+</section>
 
-    <!-- Footer indeholder kontaktinformation og links til sociale medier -->
-    <footer>
+      <!-- Footer indeholder kontaktinformation og links til sociale medier -->
+      <footer>
         <!-- Kontakinformation -->
+        <div class="footer-info">
+        <img src="lokation.png" alt="lokation" class="lokation-ikon">
         <address>Fengersvej 37, Odense M</address>
-        <!-- 'href="tel:"' gøres det muligt for brugeren at ringe direkte ved at trykke på nr. -->
+        <!-- 'href="tel:"' Telefonnummer med direkte opkaldsfunktion -->
+        </div>
+        <div class="footer-info">
+        <img src="telefon-ikon.png" alt="telefon" class="telefon-ikon">
         <a href="tel:+4531335654">+45 31 33 56 54</a>
+        </div>
+        <div class="footer-info">
+        <!-- 'href="tel:"' E-mail med direkte mailfunktion -->
+        <img src="mail-ikon.png" alt="e-mailadresse" class="mail-ikon">
         <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
+        </div>
         
         <!-- Links til sociale medie-profiler med ikoner -->
         <div class="socialemedier">
-            <a href="https://www.instagram.com/signe.groenning/"><img src="Instagram.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/signe-grønning/"><img src="Linkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/signe.gronning"><img src="Facebook-Logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/signe.groenning/"><img src="Insta-ikon.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/signe-grønning/"><img src="in-ikon.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/signe.gronning"><img src="FB-ikon.png" alt="Facebook"></a>
         </div>
     </footer>
 </body>

@@ -9,24 +9,28 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+
     <!-- Header med navigationslinks -->
     <header>
+
         <!-- Navigationsmenu med links til andre sider på websitet -->
-        <nav>
-            <div class="nav-container-forside">
+        <nav class="nav-container-forside">
+                <img src="logo-1.png" alt="LOGO" class="logo">
                 <ul>
                     <li><a href="index.html">FORSIDE</a></li>
                     <li><a href="om-mig.html">OM MIG</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="kontakt.html">KONTAKT</a></li>
                 </ul>
-            </div>
         </nav>
     </header>
 
     <!-- Hovedindholdet på siden, det vigtige -->
     <main>
-        <h1>PORTFOLIO</h1>
+        <div class="overskrift-portfolio">
+            <h1>PORTFOLIO</h1>
+        </div>
+
         <div class="gallery">
             <div class="item">
                 <img src="path_to_image.jpg" alt="Produktbilleder">
@@ -36,7 +40,7 @@
             <div class="item">
                 <img src="path_to_image.jpg" alt="Design">
                 <h2>Design</h2>
-                <p>Re-design af logo til Galleri Galshiot i samarbejde med teamet. Designet i Adobe InDesign.</p>
+                <p>Re-design af logo til Galleri Galshiøt i samarbejde med teamet. Designet i Adobe InDesign.</p>
             </div>
             <div class="item">
                 <img src="path_to_image.jpg" alt="Portræt">
@@ -64,16 +68,26 @@
     <!-- Footer indeholder kontaktinformation og links til sociale medier -->
     <footer>
         <!-- Kontakinformation -->
+        <div class="footer-info">
+        <img src="lokation.png" alt="lokation" class="lokation-ikon">
         <address>Fengersvej 37, Odense M</address>
-        <!-- 'href="tel:"' gøres det muligt for brugeren at ringe direkte ved at trykke på nr. -->
+        <!-- 'href="tel:"' Telefonnummer med direkte opkaldsfunktion -->
+        </div>
+        <div class="footer-info">
+        <img src="telefon-ikon.png" alt="telefon" class="telefon-ikon">
         <a href="tel:+4531335654">+45 31 33 56 54</a>
+        </div>
+        <div class="footer-info">
+        <!-- 'href="tel:"' E-mail med direkte mailfunktion -->
+        <img src="mail-ikon.png" alt="e-mailadresse" class="mail-ikon">
         <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
+        </div>
         
         <!-- Links til sociale medie-profiler med ikoner -->
         <div class="socialemedier">
-            <a href="https://www.instagram.com/signe.groenning/"><img src="Instagram.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/in/signe-grønning/"><img src="Linkedin.png" alt="LinkedIn"></a>
-            <a href="https://www.facebook.com/signe.gronning"><img src="Facebook-Logo.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/signe.groenning/"><img src="Insta-ikon.png" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/signe-grønning/"><img src="in-ikon.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/signe.gronning"><img src="FB-ikon.png" alt="Facebook"></a>
         </div>
     </footer>
 </body>
