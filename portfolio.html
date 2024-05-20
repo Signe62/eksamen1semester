@@ -1,90 +1,116 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <!-- Grundlæggende sideinformation og link til eksterne ressourcer-->
+    <!-- Grundlæggende sideinformation og link til eksterne ressourcer -->
     <meta charset="UTF-8">
     <!-- Sørger for websiden skalerer korrekt på mobile enheder -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
+    <!-- Link til eksternt CSS stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
+    <!-- Preconnect til Google Fonts, Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link til Google Fonts, Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Header med navigationslinks -->
     <header>
-
         <!-- Navigationsmenu med links til andre sider på websitet -->
-        <nav class="nav-container-forside">
-                <img src="logo-1.png" alt="LOGO" class="logo">
+        <nav class="navigation-container-forside">
+            <div class="navigation-indhold">
+                <img src="logo.png" alt="LOGO" class="logo">
                 <ul>
                     <li><a href="index.html">FORSIDE</a></li>
                     <li><a href="om-mig.html">OM MIG</a></li>
-                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="portfolio.html" class="active">PORTFOLIO</a></li>
                     <li><a href="kontakt.html">KONTAKT</a></li>
                 </ul>
+            </div>
         </nav>
     </header>
 
-    <!-- Hovedindholdet på siden, det vigtige -->
-    <main>
-        <div class="overskrift-portfolio">
+    <!-- Hovedindholdet på siden -->
+    <main class="main-container-portfolio">
+        <section class="portfolio">
             <h1>PORTFOLIO</h1>
-        </div>
-
-        <div class="gallery">
-            <div class="item">
-                <img src="path_to_image.jpg" alt="Produktbilleder">
-                <h2>Produktbilleder</h2>
-                <p>Produktbilleder fotograferet i forskellige setups og redigeret i Adobe Lightroom.</p>
+            <div class="galleri">
+                <div class="projekt">
+                    <div class="produktbilleder">
+                        <img src="citroner.jpg" alt="Produktbilleder">
+                        <img src="kaffe.jpg" alt="Produktbilleder">
+                    </div>
+                    <div class="beskrivelse">
+                        <h2>Produktbilleder</h2>
+                        <p>Produktbilleder fotograferet i forskellige setups og redigeret i Adobe Lightroom.</p>
+                    </div>
+                </div>
+                <div class="design">
+                    <div class="logo-billeder">
+                        <img src="logo-ms.jpg" alt="Logo">
+                        <img src="Gallerri Galschiøt logo-5.png" alt="Design">
+                    </div>
+                    <div class="beskrivelse-logo">
+                        <h2>Design</h2>
+                        <p>Re-design af logo til Galleri Galshiøt i samarbejde med teamet. Designet i Adobe InDesign.</p>
+                    </div>
+                </div>
+                <div class="portrait">
+                    <div class="portrait-billeder">
+                        <img src="SIgne.jpeg" alt="portræt af Signe">
+                        <img src="portrait.jpg" alt="Portræt">
+                    </div>
+                    <div class="beskrivelse">
+                        <h2>Portræt</h2>
+                        <p>Portræt tegnet i Adobe Illustrator ud fra en ide og et foto.</p>
+                    </div>
+                </div>
+                <div class="branding">
+                    <div class="brand-billeder">
+                        <img src="forside.png" alt="visitkort forside">
+                        <img src="bagside.png" alt="visitkort bagside">
+                    </div>
+                    <div class="beskrivelse-brand">
+                        <h2>Branding</h2>
+                        <p>Design af visuelt stærkt logo og identitet. Produceret i Adobe Illustrator og Adobe InDesign.</p>
+                    </div>
+                </div>
+                <div class="portfolio-video">
+                    <iframe src="https://www.youtube.com/embed/qu4fMXsBrz4">
+                    </iframe>
+                    <div class="beskrivelse-video">
+                        <h2>Video</h2>
+                        <p>Video er redigeret i Adobe Premiere Pro og visualiseret til en kampagne på UCL.</p>
+                    </div>
+                </div>                
+                <div class="animation">
+                    <div class="beskrivelse-animation">
+                        <h2>Animation</h2>
+                        <p>Animationer skabt i Adobe Illustrator og derefter animeret i HTML, CSS og JavaScript for bedre engagement.</p>
+                    </div>
+                </div>
             </div>
-            <div class="item">
-                <img src="path_to_image.jpg" alt="Design">
-                <h2>Design</h2>
-                <p>Re-design af logo til Galleri Galshiøt i samarbejde med teamet. Designet i Adobe InDesign.</p>
-            </div>
-            <div class="item">
-                <img src="path_to_image.jpg" alt="Portræt">
-                <h2>Portræt</h2>
-                <p>Portræt tegnet i Adobe Illustrator ud fra en ide og et foto.</p>
-            </div>
-            <div class="item">
-                <img src="path_to_image.jpg" alt="Branding">
-                <h2>Branding</h2>
-                <p>Design af visuelt stærkt logo og identitet. Produceret i Adobe Illustrator og Adobe InDesign.</p>
-            </div>
-            <div class="item">
-                <img src="path_to_image.jpg" alt="Video">
-                <h2>Video</h2>
-                <p>Videoer redigeret i Adobe Premiere Pro og visualiseret til en kampagne på UCL.</p>
-            </div>
-            <div class="item">
-                <img src="path_to_image.jpg" alt="Animation">
-                <h2>Animation</h2>
-                <p>Animationer skabt i Adobe Illustrator og derefter animeret i HTML, CSS og JavaScript for bedre engagement.</p>
-            </div>
-        </div>
+        </section>
     </main>
 
     <!-- Footer indeholder kontaktinformation og links til sociale medier -->
     <footer>
-        <!-- Kontakinformation -->
-        <div class="footer-info">
-        <img src="lokation.png" alt="lokation" class="lokation-ikon">
-        <address>Fengersvej 37, Odense M</address>
-        <!-- 'href="tel:"' Telefonnummer med direkte opkaldsfunktion -->
+        <div class="footer-tre-info">
+            <div class="footer-info">
+                <img src="lokation.png" alt="Lokation" class="ikon">
+                <address>Fengersvej 37, Odense M</address>
+            </div>
+            <div class="footer-info">
+                <img src="telefon-ikon.png" alt="Telefon" class="ikon">
+                <a href="tel:+4531335654">+45 31 33 56 54</a>
+            </div>
+            <div class="footer-info">
+                <img src="mail-ikon.png" alt="E-mailadresse" class="ikon">
+                <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
+            </div>
         </div>
-        <div class="footer-info">
-        <img src="telefon-ikon.png" alt="telefon" class="telefon-ikon">
-        <a href="tel:+4531335654">+45 31 33 56 54</a>
-        </div>
-        <div class="footer-info">
-        <!-- 'href="tel:"' E-mail med direkte mailfunktion -->
-        <img src="mail-ikon.png" alt="e-mailadresse" class="mail-ikon">
-        <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
-        </div>
-        
-        <!-- Links til sociale medie-profiler med ikoner -->
-        <div class="socialemedier">
+        <div class="sociale-medier">
             <a href="https://www.instagram.com/signe.groenning/"><img src="Insta-ikon.png" alt="Instagram"></a>
             <a href="https://www.linkedin.com/in/signe-grønning/"><img src="in-ikon.png" alt="LinkedIn"></a>
             <a href="https://www.facebook.com/signe.gronning"><img src="FB-ikon.png" alt="Facebook"></a>

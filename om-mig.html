@@ -1,83 +1,102 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <!-- Grundlæggende sideinformation og link til eksterne ressourcer-->
+    <!-- Grundlæggende sideinformation og link til eksterne ressourcer -->
     <meta charset="UTF-8">
     <!-- Sørger for websiden skalerer korrekt på mobile enheder -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OM MIG</title>
+    <!-- Link til eksternt CSS stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
+    <!-- Preconnect til Google Fonts, Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link til Google Fonts, Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <!-- Header med navigationslinks -->
     <header>
-
         <!-- Navigationsmenu med links til andre sider på websitet -->
-        <nav class="nav-container-forside">
-                <img src="logo-1.png" alt="LOGO" class="logo">
+        <nav class="navigation-container-forside">
+            <div class="navigation-indhold">
+                <img src="logo.png" alt="LOGO" class="logo">
                 <ul>
                     <li><a href="index.html">FORSIDE</a></li>
-                    <li><a href="om-mig.html">OM MIG</a></li>
+                    <li><a href="om-mig.html" class="active">OM MIG</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="kontakt.html">KONTAKT</a></li>
                 </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Hovedindholdet på siden -->
-    <section class="indhold">
-        <div class="intro-om-mig">
-            <div class="tekst-overst-om-mig">
-                <h1 class="overskrift-om-mig">OM MIG</h1>
-                <p class="brodtekst-om-mig">Velkommen til min personlige side. Mit navn er Signe Grønning, jeg er en smilende pige på 22 år og bosiddende i Odense M.</p>
-                <p>Min helt store interesse er digital design og online medieplatforme. Derfor læser jeg til multimediedesign på UCL, Odense.</p>
-                <p>På min uddannelse har jeg en stor interesse i at skabe detaljeorienterede og æstetisk tiltalende løsninger både selvstændigt og i kreative teams.</p>
+    <main class="main-container-om-mig">
+        <section class="indhold">
+            <div class="introduktion-om-mig">
+                <div class="tekst-om-mig">
+                    <h1 class="overskrift-om-mig">OM MIG</h1>
+                    <p>Velkommen til min personlige side. Mit navn er Signe Grønning, jeg er en smilende pige på 22 år og bosiddende i Odense M.</p>
+                    <p>Min helt store interesse er digital design og online medieplatforme. Derfor læser jeg til multimediedesign på UCL, Odense.</p>
+                    <p>På min uddannelse har jeg en stor interesse i at skabe detaljeorienterede og æstetisk tiltalende løsninger både selvstændigt og i kreative teams.</p>
+                </div>
+                <img src="migomside.jpg" alt="Signe Grønning" class="billede-om-mig">
             </div>
-            <!-- Billede af mig -->
-            <img src="migomside.jpg" alt="Signe Grønning" class="profile-pic">
-        </div>
 
-       <!-- Sektion der fremhæver mine kompetencer -->
-       <section class="kompetencer">
-        <h2>Mine kompetencer</h2>
-        <div class="skills">
-            <!-- Enkelt kompetenceområde med billede og beskrivelse -->
-            <div class="skill">
-                <img src="Ide.jpg" alt="Kreativ idégenerering">
-                <h3>Kreativitet</h3>
-                <p>Kreativ idégenerering<br>Hands-on læring.</p>
-            </div>
-            <!-- Enkelt kompetenceområde med billede og beskrivelse -->
-            <div class="skill">
-                <img src="figma-logo.jpg" alt="Figma">
-                <h3>Figma</h3>
-                <p>Figma<br>Erfaring i Figma. Bruger det til at visualisere projekter.</p>
-            </div>
-        </div>
-    </section>
-</section>
+            <section class="mine-kompetencer">
+                <h2 class="under-overskrift">Mine kompetencer</h2>
+                <div class="kompetence-liste">
+                    <div class="kompetence">
+                        <img src="idé.png" alt="Kreativ idégenerering">
+                        <h3>Kreativ idégenerering</h3>
+                        <p>Kreativ idégenerering<br>Hands-on læring.</p>
+                    </div>
+                    <div class="kompetence">
+                        <img src="figma.png" alt="Figma">
+                        <h3>Figma</h3>
+                        <p>Erfaring i Figma. Bruger det til at visualisere projekter. Det er alt fra lo-fi til prototyper og mock-up format.</p>
+                    </div>
+                    <div class="kompetence">
+                        <img src="kode.png" alt="Kodning">
+                        <h3>HTML og CSS</h3>
+                        <p>Kodning er helt nyt for mig. Denne hjemmeside er mit første forsøg på at kode og det har givet en grundlæggende viden for HTML og CSS.</p>
+                    </div>
+                </div>
+                <div class="adobe-programmer">
+                    <img src="adobe.png" alt="Adobe" class="adobe-logo">
+                    <div class="adobe-ikoner">
+                        <img src="ae.png" alt="Adobe After Effects">
+                        <img src="ai.png" alt="Adobe Illustrator">
+                        <img src="lr.png" alt="Adobe Lightroom">
+                        <img src="pr.png" alt="Adobe PremierePro">
+                        <img src="ps.png" alt="Adobe Photoshop">
+                        <img src="id.png" alt="Adobe InDesign">
+                    </div>
+                    <h3>Adobe programmer</h3>
+                    <p>Min største kendskab i Adobe programmerne ligger I Adobe Illustrator og Lightroom. Med jeg har også kendskab til InDesign, Photoshop og Premiere Pro.</p>
+                </div>
+            </section>
+        </section>
+    </main>
 
-      <!-- Footer indeholder kontaktinformation og links til sociale medier -->
-      <footer>
-        <!-- Kontakinformation -->
-        <div class="footer-info">
-        <img src="lokation.png" alt="lokation" class="lokation-ikon">
-        <address>Fengersvej 37, Odense M</address>
-        <!-- 'href="tel:"' Telefonnummer med direkte opkaldsfunktion -->
+    <!-- Footer indeholder kontaktinformation og links til sociale medier -->
+    <footer>
+        <div class="footer-tre-info">
+            <div class="footer-info">
+                <img src="lokation.png" alt="Lokation" class="ikon">
+                <address>Fengersvej 37, Odense M</address>
+            </div>
+            <div class="footer-info">
+                <img src="telefon-ikon.png" alt="Telefon" class="ikon">
+                <a href="tel:+4531335654">+45 31 33 56 54</a>
+            </div>
+            <div class="footer-info">
+                <img src="mail-ikon.png" alt="E-mailadresse" class="ikon">
+                <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
+            </div>
         </div>
-        <div class="footer-info">
-        <img src="telefon-ikon.png" alt="telefon" class="telefon-ikon">
-        <a href="tel:+4531335654">+45 31 33 56 54</a>
-        </div>
-        <div class="footer-info">
-        <!-- 'href="tel:"' E-mail med direkte mailfunktion -->
-        <img src="mail-ikon.png" alt="e-mailadresse" class="mail-ikon">
-        <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
-        </div>
-        
-        <!-- Links til sociale medie-profiler med ikoner -->
-        <div class="socialemedier">
+        <div class="sociale-medier">
             <a href="https://www.instagram.com/signe.groenning/"><img src="Insta-ikon.png" alt="Instagram"></a>
             <a href="https://www.linkedin.com/in/signe-grønning/"><img src="in-ikon.png" alt="LinkedIn"></a>
             <a href="https://www.facebook.com/signe.gronning"><img src="FB-ikon.png" alt="Facebook"></a>

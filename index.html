@@ -1,65 +1,74 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <!-- Grundlæggende sideinformation og link til eksterne ressourcer-->
+    <!-- Grundlæggende sideinformation og link til eksterne ressourcer -->
     <meta charset="UTF-8">
     <!-- Sørger for websiden skalerer korrekt på mobile enheder -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Medie Signe</title>
+    <!-- Link til eksternt CSS stylesheet -->
     <link rel="stylesheet" href="stylesheet.css">
+    <!-- Preconnect til Google Fonts, Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link til Google Fonts, Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header med navigationslinks -->
     <header>
         <!-- Navigationsmenu med links til andre sider på websitet -->
-        <nav class="nav-container-forside">
-                <img src="logo-1.png" alt="LOGO" class="logo">
+        <nav class="navigation-container-forside">
+            <div class="navigation-indhold">
+                <img src="logo.png" alt="LOGO" class="logo">
                 <ul>
-                    <li><a href="index.html">FORSIDE</a></li>
                     <li><a href="om-mig.html">OM MIG</a></li>
                     <li><a href="portfolio.html">PORTFOLIO</a></li>
                     <li><a href="kontakt.html">KONTAKT</a></li>
                 </ul>
+            </div>
         </nav>
     </header>
 
     <!-- Hovedindholdet på siden -->
-    <section class="main-content">
-     <!-- Introduktion på forsiden -->
-    <div class="intro-forside">
-            <h1 class="navn-forside">Signe Grønning</h1>
-            <p class="first-forside">Multimediedesigner</p>
-            <h2>Jeg har erfaring i:</h2>
-            <p>Grafisk design, webdesign, designværktøjer, trends & tendenser og meget mere.</p>
-            <button class="read-mere-knap">Læs mere</button>
-    </div>
-
-    <!-- Billede der supplerer introduktionen -->
-    <div class="pink-box-forside">
-        <img src="migforside.png" alt="Billede af Signe" class="billede">
-    </div>
-</section>
+    <main class="main-container-forside">
+        <!-- Introduktion på forsiden -->
+        <section class="hovedindhold-forside">
+            <div class="introduktion-forside">
+                    <h1 class="navn-forside">Signe Grønning</h1>
+                    <p class="titel-forside">Multimediedesigner</p>
+                <h2>Jeg har erfaring i:</h2>
+                <p>Grafisk design, webdesign, designværktøjer, trends & tendenser og meget mere.</p>
+                <button class="laes-mere-knap">Læs mere</button>
+            </div>
+            <!-- Billede der supplerer introduktionen -->
+            <div class="billede-container-forside">
+                <img src="migforside.png" alt="Billede af Signe" class="billede">
+            </div>
+        </section>
+    </main>
 
     <!-- Footer indeholder kontaktinformation og links til sociale medier -->
     <footer>
         <!-- Kontakinformation -->
-        <div class="footer-info">
-        <img src="lokation.png" alt="lokation" class="lokation-ikon">
-        <address>Fengersvej 37, Odense M</address>
-        <!-- 'href="tel:"' Telefonnummer med direkte opkaldsfunktion -->
-        </div>
-        <div class="footer-info">
-        <img src="telefon-ikon.png" alt="telefon" class="telefon-ikon">
-        <a href="tel:+4531335654">+45 31 33 56 54</a>
-        </div>
-        <div class="footer-info">
-        <!-- 'href="tel:"' E-mail med direkte mailfunktion -->
-        <img src="mail-ikon.png" alt="e-mailadresse" class="mail-ikon">
-        <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
+        <div class="footer-tre-info">
+            <div class="footer-info">
+                <img src="lokation.png" alt="Lokation" class="ikon">
+                <address>Fengersvej 37, Odense M</address>
+            </div>
+            <!-- Man kan ved tel og mail trykke direkte og sendes videre -->
+            <div class="footer-info">
+                <img src="telefon-ikon.png" alt="Telefon" class="ikon">
+                <a href="tel:+4531335654">+45 31 33 56 54</a>
+            </div>
+            <div class="footer-info">
+                <img src="mail-ikon.png" alt="E-mailadresse" class="ikon">
+                <a href="mailto:signe.gronning@gmail.com">signe.gronning@gmail.com</a>
+            </div>
         </div>
         
         <!-- Links til sociale medie-profiler med ikoner -->
-        <div class="socialemedier">
+        <div class="sociale-medier">
             <a href="https://www.instagram.com/signe.groenning/"><img src="Insta-ikon.png" alt="Instagram"></a>
             <a href="https://www.linkedin.com/in/signe-grønning/"><img src="in-ikon.png" alt="LinkedIn"></a>
             <a href="https://www.facebook.com/signe.gronning"><img src="FB-ikon.png" alt="Facebook"></a>
@@ -67,4 +76,3 @@
     </footer>
 </body>
 </html>
-

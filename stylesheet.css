@@ -1,443 +1,487 @@
-/* Grundlæggende indstillinger for layout, font og farver */
+/* Indstiller grundlæggende layout og farver for hele dokumentet, bruger flexbox for layoutet */
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #252525;
     display: flex;
     flex-direction: column;
-}
-
-/* Centrering af indhold og konfiguration af grundlæggende tekststørrelse */
-body {
+    font-family: "Roboto", sans-serif;
     text-align: center;
     font-size: 18px;
 }
 
-/* Stil og positionering af navigationsbaren der kommer med ved scroll */
-.nav-container-forside {
+/* p, h1, h2 indstiller typografi for afsnit og overskrifter */
+p {
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    font-style: bold;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* Header og navigationsmenu */
+
+/* Header indstiller headerens layout og positionering */
+header {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
+    flex-direction: column;
     background-color: #d9d9d9;
     position: fixed;
     top: 0;
     width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
-/* Fjerner punkttegn fra listen og fjerner browserens default ved margin og padding */
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
+/* .navigation-container-forside, Flex-container for navigation, centreret. */
+.navigation-container-forside {
     display: flex;
+    justify-content: center;
+}
+
+/* .navigation-indhold, Flex-container til indholdet af navigation, fordelt mellem logo og links. */
+.navigation-indhold {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 10px;
+    width: 100%;
 }
 
-/* Styling og margin for listeelementer/links */
-ul li {
-    margin-right: 20px;
+.navigation-container-forside ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
 }
 
-/* Grundlæggende styling af links i navigationsbaren */
-li a {
+.navigation-container-forside ul li a {
     color: #252525;
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
 }
 
-/* Hover-effekt og active-effekt for links */
-li a:hover, li a.active {
+/* Styler links */
+.navigation-container-forside ul li a:hover, 
+.navigation-container-forside ul li a.active {
     color: rgb(244, 140, 160);
 }
 
-/* Styling af logoet */
+/* Styler logoet */
 .logo {
     height: 50px;
-    width: auto; 
-    margin-right: auto;
-    margin-left: 10px;
 }
 
-/* Styling af 'Læs mere' knappen */
-.read-mere-knap {
+/* Hovedindhold */
+.main-container-forside {
+    flex: 1;
+    padding: 0px;
+}
+/*  Indstiller hovedindholdets layout og positionering */
+
+.hovedindhold-forside {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-items: center;
+}
+
+.introduktion-forside {
+    width: 50%;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Styler elementer */
+.navn-forside {
+    font-size: 36px;
+    color: rgb(244, 140, 160);
+}
+
+.titel-forside {
+    font-size: 30px;
+    font-weight: 700;
+    font-style: bold;
+}
+
+h2, .laes-mere-knap {
+    font-weight: 700;
+    font-style: bold;
+}
+
+.laes-mere-knap {
     padding: 10px 20px;
     background-color: #7d7d7d;
     color: #252525;
     border: none;
     font-size: 18px;
-    font-weight: bold;
     cursor: pointer;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    margin-top: 20px;
 }
 
-/* Hover-effekt for knappen */
-.read-mere-knap:hover {
+.laes-mere-knap:hover {
     color: rgb(244, 140, 160);
 }
 
-/* Flexbox opsætning for hovedindholdet */
-.main-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-}
 
-/* Flexbox-styling for pink-box som container */
-.pink-box-forside {
-    width: 822px;
-    height: 874px;
+/* Billedet */
+.billede-container-forside {
     background-color: rgba(244, 140, 160, 0.30);
     display: flex;
-    align-items: center;
-    justify-content: left;
-}
-
-/* Responsivt billede inden i pink-box */
-.billede {
-    width: 822px;
-    height: 874px;
-}
-
-/* Flex-model for intro-sektion */
-.intro-forside {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
-/* Styling af overskrift */
-.navn-forside {
-    font-size: 36px;
-    color: rgb(244, 140, 160);
-    display: flex;
-    justify-content: center;
+.billede-container-forside img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Styling og positionering af undertitel */
-.first-forside {
-    font-size: 30px;
-    font-weight: bold;
-}
 
-.navn-forside, .first-forside {
-    margin: 10px;
-    padding: 0px;
-}
+/* Footer */
 
-/* Footer styling ved hjælp af flexbox */
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
     background-color: #d9d9d9;
+    padding: 20px;
+    text-align: center;
     font-size: 14px;
-}
-
-/* Almindelig styling for footer adressen */
-footer address {
-    font-style: normal;
-}
-
-.lokation-ikon {
-    width: auto;
-    height: 24px;
-}
-.mail-ikon {
-    width: 24px;
-    height: 24px;
-}
-
-.telefon-ikon {
-    width: 24px;
-    height: 24px;
 }
 
 .footer-info {
     display: flex;
     align-items: center;
-    margin: 0 10px;
-    margin-right: auto;
-    margin-left: 10px;
+    gap: 10px;
 }
 
-/* Styling af sociale medie ikoner */
-.socialemedier a img {
-    width: auto;
-    height: 24px;
-    margin-right: 10px;
-    margin-inline: 10px;
+address {
+    font-style: normal;
+}
+
+.footer-info img {
+    height: 20px;
+    width: 20px;
+}
+
+.footer-tre-info {
+    display: flex;
+    gap: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    color: #252525;
+}
+
+.sociale-medier {
+    display: flex;
+    gap: 20px;
+}
+
+.sociale-medier img {
+    height: 25px;
+    width: 25px;
 }
 
 
-/* Mediequeries for responsivt design */
-@media (max-width: 768px) {
-    .main-content {
-        flex-direction: column;
-    }
+/* Media queries for responsivt design */
 
-    .intro-forside, .pink-box-forside {
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
 
-    .socialemedier a img {
-        width: 15px;
-        height: 15px;
-    }
-}
+
 
 
 
 
 /* Nedestående er CSS for 'OM MIG' siden */
 
-/* Flex-model for indholdet */
-.indhold {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 150px; /* Plads til den fastgjorte navigationsbar */
-    padding: 20px;
-}
-
-/* Introduktion på om-mig siden */
-.intro-om-mig {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.main-container-om-mig {
     max-width: 1200px;
-    width: 100%;
-    margin-top: 50px;
+    margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
-.tekst-overst-om-mig {
-    max-width: 50%;
+.introduktion-om-mig {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 100px;
+    gap: 20px;
+}
+
+.tekst-om-mig {
+    max-width: 50%;
+    text-align: left;
 }
 
 .overskrift-om-mig {
     font-size: 36px;
-    color: rgb(244, 140, 160);
+    color: #f48ca0;
+    margin-top: 0;
 }
 
-.brødtekst-om-mig {
-    margin-top: 10px;
-    font-size: 18px;
-}
-
-/* Styling af profilbillede */
-.profile-pic {
-    max-width: 50%;
-    height: auto;
-    margin-left: 20px;
+.billede-om-mig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
 /* Kompetencer sektion */
-.kompetencer {
-    max-width: 1200px;
-    width: 100%;
-    margin-top: 50px;
+.mine-kompetencer {
+    padding: 100px 0;
+}
+
+.under-overskrift {
+    font-size: 30px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.skills {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.skill {
+    margin: 0px;
     text-align: center;
 }
 
-.skill img {
-    width: 80px;
-    margin-bottom: 10px;
-}
-
-
-
-
-
-
-/* Nedestående begynder CSS for 'PORTFOLIO' siden */
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-}
-
-.overskrift-portfolio {
-    margin-top: 150px;
-    text-align: left;
-    color: rgb(244, 140, 160);
-    font-size: 36px;
-}
-
-.gallery {
+.kompetence-liste {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.kompetence {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.kompetence img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+.adobe-programmer {
+    margin-top: 40px;
+    text-align: left;
     padding: 20px;
 }
 
-.item {
-    margin-bottom: 20px;
-    padding: 10px;
+.adobe-ikoner {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.adobe-ikoner img {
+    width: 40px;
+}
+
+.adobe-titel {
+    font-size: 20px;
+}
+
+
+/* Nedestående er CSS for 'PORTFOLIO' siden */
+.main-container-portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px 20px 20px;
+    box-sizing: border-box;
+}
+
+.portfolio h1 {
+    color: #f48ca0;
+    font-size: 36px;
+    margin-top: 0px;
+    text-align: left;
+    padding: 20px 0;
+}
+
+.galleri {
     display: flex;
     flex-direction: column;
+    gap: 50px;
+}
+
+/* Projekter */
+.projekt, .design, .portrait, .branding, .portfolio-video, .animation {
+    display: flex;
+    gap: 20px;
     align-items: center;
 }
 
-.item img {
+.produktbilleder, .logo-billeder, .portrait-billeder, .brand-billeder {
+    display: flex;
+    gap: 20px;
+}
+
+.produktbilleder img, .logo-billeder img, .portrait-billeder img, .brand-billeder img, .portfolio-video iframe {
     width: 100%;
+    max-width: 250px;
     height: auto;
 }
 
-.item h2, .item p {
-    text-align: center;
-}
-
-
-
-/* Nedestående begynder CSS for 'KONTAKT MIG' siden */
-
-/* Kontaktinformation sektion styling */
-.contact-info {
-    margin-top: 100px;
-    padding: 50px;
-}
-
-.contact-info h1 {
-    font-size: 36px;
+.beskrivelse, .beskrivelse-logo, .beskrivelse-portrait, .beskrivelse-brand, .beskrivelse-video, .beskrivelse-animation {
     text-align: left;
-    color: rgb(244, 140, 160);
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 600px;
+}
+
+/* Specifikke sektioner */
+.projekt {
+    flex-direction: row-reverse;
+}
+
+.portrait {
+    flex-direction: row-reverse;
+}
+
+.brand-billeder {
+    flex-direction: column;
+}
+
+.portfolio-video iframe {
+    max-width: 500px;
+    height: 280px;
+    flex-direction: column;
+}
+
+.animation {
+    flex-direction: row-reverse;
+}
+
+.animation video {
+    max-width: 500px;
+    height: auto;
+}
+
+
+/* Nedestående er CSS for 'KONTAKT MIG' siden */
+
+.main-container-kontakt {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.kontakt-info h1 {
+    color: #f48ca0;
+    font-size: 36px;
+    margin-top: 0;
 }
 
 .info-container {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 50px;
+    flex-direction: row;
+    gap: 20px;
+    padding-top: 100px;
 }
 
-/* Styling af kontakt detaljer */
-.contact-details {
+.info-tekst {
+    max-width: 50%;
+    text-align: left;
+}
+
+.info-tekst h2 {
+    font-size: 30px;
+    color: #252525;
+    margin-top: 10px;
+}
+
+.brodtekst {
+    text-align: left;
+}
+
+.kontakt-detajler {
     display: flex;
     flex-direction: column;
 }
 
-.contact-item {
+.kontakt-item {
     display: flex;
     align-items: center;
-    flex-direction: row;
-    margin-bottom: 10px;
+    padding-top: 20px;
+    gap: 20px;
 }
 
-/* Mellemrum/luft mellem ikone og tekst */
-.contact-item p{
-    margin-left: 20px;
-}
-
-
-/* Mellemrum/luft mellem tekst og billede samt overskrift og tekst */
-.info-text-contact {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    padding-right: 100px;
-}
-
-/* Styling af lyserødboks under billedet af mig */
-.contact-image {
+.kontakt-billede {
     background-color: rgba(244, 140, 160, 0.30);
-    width: 865px;
-    height: 577px;
     display: flex;
-    justify-content: right;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
 }
 
-.contact-image img {
-    width: 865px;
-    height: 577px;
+.kontakt-billede img {
+    max-width: 100%;
+    height: auto;
 }
 
-.contact-image img, .info-text {
-    display: flex;
-    flex-direction: column;
+.ikon {
+    height: 30px; 
+    width: 30px;
 }
 
-/* Styling af 'kontakt!' samt 'lyserøde bokse' */
-.contact-form {
+.formular-intro {
+    padding-top: 100px;
+}
+
+.kontakt-form h2 {
+    font-size: 30px;
+    padding: 20px;
+    margin: 0px;
+}
+
+.kontakt-form p {
+    font-size: 16px;
+    padding: 20px;
+    margin: 0px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: rgba(244, 140, 160, 0.20);
+    border: none;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    width: 100%;
 }
 
-.contact-form h2 {
-    font-size: 30px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-bottom: 20px;
-}
-
-/* Styling af 'paragraf' - 'kontakt mig' */
-.contact-form p{
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-/* Styling af 'kontakt mig boksene' */
-form input, form textarea {
-    width: 100%;
-    padding: 30px;
-    margin-bottom: 30px;
-    background-color: rgba(244, 140, 160, 0.20);
-    border: none;
-    font-size: 14px;
-}
-
-/* Styling af 'send knappen' */
 form button {
-    padding: 10px 40px;
+    padding: 10px 30px;
     background-color: #7d7d7d;
     color: #252525;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 20px;
-    margin-bottom: 100px;
-    float: left;
+    margin: 20px;
 }
 
-/* Hover-effekt for 'send knappen' */
 form button:hover {
     color: rgb(244, 140, 160);
 }
-
