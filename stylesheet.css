@@ -83,12 +83,14 @@ header {
 
 /* Hovedindhold */
 .main-container-forside {
+    background-color:#d9d9d9;
     flex: 1;
     padding: 0px;
 }
 /*  Indstiller hovedindholdets layout og positionering */
 
 .hovedindhold-forside {
+    background-color: #ffffff;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -96,6 +98,7 @@ header {
 }
 
 .introduktion-forside {
+    background-color: #ffffff;
     width: 50%;
     text-align: center;
     padding: 20px;
@@ -198,12 +201,53 @@ a:link {
 }
 
 
-/* Media queries for responsivt design */
+/* Media queries for responsivt design for 'FORISDE' siden */
+@media screen and (max-width: 1023px) {
+    .hovedindhold-forside {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introduktion-forside, .billede-container-forside {
+        width: 100%;
+        padding: 100px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navigation-indhold {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .navigation-container-forside ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .introduktion-forside {
+        padding-top: 200px;
+        padding-bottom: 50px;
+    }
+
+    .laes-mere-knap {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .footer-tre-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sociale-medier {
+        justify-content: center;
+    }
+}
 
 
 
 /* Nedestående er CSS for 'OM MIG' siden */
-
 
 .main-container-om-mig {
     max-width: 1200px;
@@ -221,6 +265,7 @@ a:link {
 
 .tekst-om-mig {
     max-width: 50%;
+    text-align: left;
 }
 
 .overskrift-om-mig {
@@ -238,7 +283,8 @@ a:link {
 
 /* Kompetencer sektion */
 .mine-kompetencer {
-    padding: 100px 0;
+    padding-top: 100px;
+    margin-bottom: 40px;
 }
 
 .under-overskrift {
@@ -292,6 +338,28 @@ a:link {
 }
 
 
+/* Media queries for responsivt design for 'OM MIG' siden */
+@media screen and (max-width: 1023px) {
+    .introduktion-om-mig {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 250px;
+    }
+
+    .billede-om-mig, .tekst-om-mig {
+        width: 100%;
+    }
+
+    .tekst-om-mig {
+        max-width: 100%;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .mine-kompetencer {
+        padding-top: 40px;
+    }
+}
 
 
 
@@ -315,14 +383,17 @@ a:link {
     padding: 20px 0;
 }
 
+.portfolio {
+    margin-bottom: 40px;
+}
+
 .galleri {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-/* Projekter */
-.projekt, .design, .portrait, .branding, .animation {
+.projekt, .design, .portrait, .branding, .animation, .video-sektion {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -345,7 +416,6 @@ a:link {
     max-width: 600px;
 }
 
-/* Specifikke sektioner */
 .projekt {
     flex-direction: row-reverse;
 }
@@ -369,7 +439,19 @@ a:link {
 }
 
 .animation {
-    flex-direction: row-reverse;
+    flex-direction: row;
+}
+
+.animation-ws {
+    width: 500px;
+    height: 500px;
+    background: url('ws.png') 0 0 no-repeat;
+    animation: play 3s steps(5) infinite;
+}
+
+@keyframes play {
+    0%{background-position: 0px;}
+    100%{background-position: -2500px;}
 }
 
 
@@ -489,4 +571,8 @@ form button {
 
 form button:hover {
     color: rgb(244, 140, 160);
+}
+
+.kontakt-form {
+    margin-bottom: 40px;
 }
