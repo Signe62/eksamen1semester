@@ -201,23 +201,10 @@ a:link {
 }
 
 
-/* Media queries for responsivt design for 'FORISDE' siden */
-@media screen and (max-width: 1023px) {
-    .hovedindhold-forside {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .introduktion-forside, .billede-container-forside {
-        width: 100%;
-        padding: 100px;
-    }
-}
-
 @media screen and (max-width: 767px) {
     .navigation-indhold {
-        flex-direction: column;
         padding-top: 10px;
+        flex-direction: column;
     }
 
     .navigation-container-forside ul {
@@ -225,14 +212,21 @@ a:link {
         gap: 10px;
     }
 
-    .introduktion-forside {
-        padding-top: 200px;
-        padding-bottom: 50px;
-    }
-
     .laes-mere-knap {
         font-size: 16px;
         padding: 8px 16px;
+    }
+    
+    .hovedindhold-forside {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .introduktion-forside, .billede-container-forside {
+        padding-top: 200px;
+        padding-bottom: 40px;
+        height: auto;
+        width: auto;
     }
 
     .footer-tre-info {
@@ -243,6 +237,7 @@ a:link {
     .sociale-medier {
         justify-content: center;
     }
+
 }
 
 
@@ -339,7 +334,7 @@ a:link {
 
 
 /* Media queries for responsivt design for 'OM MIG' siden */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 767px) {
     .introduktion-om-mig {
         display: flex;
         flex-direction: column-reverse;
@@ -358,6 +353,10 @@ a:link {
 
     .mine-kompetencer {
         padding-top: 40px;
+    }
+
+    .adobe-programmer {
+        margin-top: 0px;
     }
 }
 
@@ -454,6 +453,50 @@ a:link {
     100%{background-position: -2500px;}
 }
 
+
+/* Media queries for responsivt design for 'PORTFOLIO' siden */
+@media screen and (max-width: 767px) {
+    .portfolio {
+        padding-top: 150px;
+    }
+
+    .projekt, .design, .portrait, .branding, .animation, .video-sektion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .video-sektion {
+        flex-direction: column-reverse;
+    }
+
+    .beskrivelse, .beskrivelse-logo, .beskrivelse-portrait, .beskrivelse-brand, .beskrivelse-video, .beskrivelse-animation {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .produktbilleder, .logo-billeder, .portrait-billeder, .brand-billeder {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .produktbilleder img, .logo-billeder img, .portrait-billeder img, .brand-billeder img, .portfolio-video iframe {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+    }
+
+    .portfolio-video iframe {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .video-sektion, .animation {
+        align-items: flex-start;
+    }
+}
 
 
 
@@ -576,3 +619,25 @@ form button:hover {
 .kontakt-form {
     margin-bottom: 40px;
 }
+
+/* Media queries for 'KONTAKT' siden */
+@media screen and (max-width: 767px) {
+    .info-container {
+        flex-direction: column-reverse;
+        padding-top: 250px;
+    }
+
+    .info-tekst {
+        max-width: 100%;
+    }
+
+    .kontakt-billede {
+        width: 100%;
+    }
+
+    .formular-intro {
+        text-align: left;
+        padding-top: 40px;
+    }
+}
+
