@@ -1,5 +1,5 @@
-/* Indstiller grundlæggende layout og farver for hele dokumentet, bruger flexbox for layoutet */
 html, body {
+/* Indstiller grundlæggende layout og farver for hele dokumentet, bruger flexbox for layoutet */
     height: 100%;
     margin: 0;
     padding: 0;
@@ -202,11 +202,8 @@ a:link {
 
 
 
-
-
-
-
 /* Nedestående er CSS for 'OM MIG' siden */
+
 
 .main-container-om-mig {
     max-width: 1200px;
@@ -224,7 +221,6 @@ a:link {
 
 .tekst-om-mig {
     max-width: 50%;
-    text-align: left;
 }
 
 .overskrift-om-mig {
@@ -296,7 +292,14 @@ a:link {
 }
 
 
+
+
+
+
 /* Nedestående er CSS for 'PORTFOLIO' siden */
+
+
+/* Hovedindhold */
 .main-container-portfolio {
     max-width: 1200px;
     margin: 0 auto;
@@ -319,10 +322,11 @@ a:link {
 }
 
 /* Projekter */
-.projekt, .design, .portrait, .branding, .portfolio-video, .animation {
+.projekt, .design, .portrait, .branding, .animation {
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: space-between;
 }
 
 .produktbilleder, .logo-billeder, .portrait-billeder, .brand-billeder {
@@ -330,7 +334,7 @@ a:link {
     gap: 20px;
 }
 
-.produktbilleder img, .logo-billeder img, .portrait-billeder img, .brand-billeder img, .portfolio-video iframe {
+.produktbilleder img, .logo-billeder img, .portrait-billeder img, .brand-billeder img {
     width: 100%;
     max-width: 250px;
     height: auto;
@@ -357,17 +361,18 @@ a:link {
 .portfolio-video iframe {
     max-width: 500px;
     height: 280px;
-    flex-direction: column;
+}
+
+.portfolio-video {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .animation {
     flex-direction: row-reverse;
 }
 
-.animation video {
-    max-width: 500px;
-    height: auto;
-}
+
 
 
 /* Nedestående er CSS for 'KONTAKT MIG' siden */
