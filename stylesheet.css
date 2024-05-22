@@ -666,15 +666,20 @@ form button:hover {
 @media screen and (max-width: 767px) {
     .info-container {
         flex-direction: column-reverse;
-        padding-top: 250px;
+        padding-top: 220px;
     }
 
     .info-tekst {
+        padding-top: 40px;
         max-width: 100%;
     }
 
     .kontakt-billede {
         width: 100%;
+    }
+
+    .kontakt-form {
+        margin-bottom: 20px;
     }
 
     .formular-intro {
