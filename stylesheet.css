@@ -488,21 +488,30 @@ a:link {
     background: url('portfolio/ws.png') 0 0 no-repeat;
     animation: play 3s steps(5) infinite;
 }
-
 @keyframes play {
     0%{background-position: 0px;}
     100%{background-position: -2500px;}
 }
 
+.mobile-only {
+    display: none;
+}
 
 /* Media queries for responsivt design for 'PORTFOLIO' siden */
-
 @media screen and (max-width: 767px) {
     .portfolio {
         padding-top: 150px;
     }
 
-    .projekt, .design, .portrait, .branding, .animation, .video-sektion {
+    .portfolio h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .projekt, .design, .portrait, .branding, .video-sektion {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -516,7 +525,7 @@ a:link {
         max-width: 100%;
     }
 
-    .produktbilleder, .logo-billeder, .portrait-billeder, .brand-billeder {
+    .produktbilleder, .logo-billeder, .portrait-billeder, .brand-billeder, .portfolio-video {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
@@ -531,14 +540,41 @@ a:link {
     }
 
     .portfolio-video iframe {
-        max-width: 90%;
-        height: auto;
+        width: 100%;
     }
 
-    .video-sektion, .animation {
+    .video-sektion {
         align-items: flex-start;
     }
+
+    .desktop-only {
+        width: 100%;
+        display: none;
+    }
+
+    .mobile-only {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .tlf-iframe {
+        width: 204px;
+    } 
+
+    .beskrivelse-tlf {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
 }
+
+
+
 
 
 
@@ -592,10 +628,8 @@ a:link {
 }
 
 .kontakt-billede {
-    background-color: rgba(244, 140, 160, 0.30);
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 50%;
 }
 
@@ -615,7 +649,7 @@ a:link {
 
 .kontakt-form h2 {
     font-size: 30px;
-    padding: 20px;
+    padding-top: 20px;
     margin: 0px;
 }
 
@@ -685,6 +719,24 @@ form button:hover {
     .formular-intro {
         text-align: left;
         padding-top: 40px;
+    }
+
+    .kontakt-info h1 {
+        font-size: 32px;
+    }
+
+    .info-tekst h2 {
+        font-size: 28px;
+    }
+
+    .kontakt-form h2 {
+        font-size: 28px;
+        padding: 0px;
+    }
+
+    .kontakt-form p {
+        padding: 0px;
+        padding-top: 20px;
     }
 }
 
