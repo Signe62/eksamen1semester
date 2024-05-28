@@ -19,7 +19,7 @@ p {
 
 h1 {
     font-weight: 700;
-    font-style: bold;
+    font-weight: bold;
 }
 
 h2 {
@@ -114,12 +114,12 @@ header {
 .titel-forside {
     font-size: 30px;
     font-weight: 700;
-    font-style: bold;
+    font-weight: bold;
 }
 
 h2, .laes-mere-knap {
     font-weight: 700;
-    font-style: bold;
+    font-weight: bold;
 }
 
 .laes-mere-knap {
